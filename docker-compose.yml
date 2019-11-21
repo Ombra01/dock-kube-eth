@@ -8,7 +8,7 @@ services:
 
     environment: 
 
-      - nodekeyhex=08f0e1dee5c1b4645f3331a566009e41a4514b6cd28656d63d0449ecf812812b #Needs to be fix, so that the miners know the resulting enode id
+      - nodekeyhex=08f0e1dee5c1b4645f3331a566009e41a4514b6cd28656d63d0449ecf812812b
 
     build:
 
@@ -22,7 +22,7 @@ services:
 
       roomnet: 
 
-        ipv4_address: 172.25.0.101 # The miners need to know the IP address later on
+        ipv4_address: 172.25.0.101
 
 
 
@@ -36,9 +36,9 @@ services:
 
     environment:
 
-      - address=3590aca93338b0721966a8d0c96ebf2c4c87c544 #derived from the private key which is passed in the args
+      - address=3590aca93338b0721966a8d0c96ebf2c4c87c544
 
-      - bootnodeId=76a8171707eca17647a47ca99ffd348927dfa60102792ea349a25d5192e61855be83b786e376276a306afcceea4ffd1c9c77e4370b417efc39f328a0d068004c #derived from the nodekeyhex of the bootnode
+      - bootnodeId=76a8171707eca17647a47ca99ffd348927dfa60102792ea349a25d5192e61855be83b786e376276a306afcceea4ffd1c9c77e4370b417efc39f328a0d068004c
 
       - bootnodeIp=172.25.0.101  
 
@@ -48,7 +48,7 @@ services:
 
       args:
 
-        privatekey: df504d175ae63abf209bad9dda965310d99559620550e74521a6798a41215f46 # Please don't do something like this in production, okay?
+        privatekey: df504d175ae63abf209bad9dda965310d99559620550e74521a6798a41215f46
 
         password: node-1
 
@@ -80,9 +80,9 @@ services:
 
     environment:
 
-      - address=8cc5a1a0802db41db826c2fcb72423744338dcb0 #derived from the private key which is passed in the args
+      - address=8cc5a1a0802db41db826c2fcb72423744338dcb0
 
-      - bootnodeId=76a8171707eca17647a47ca99ffd348927dfa60102792ea349a25d5192e61855be83b786e376276a306afcceea4ffd1c9c77e4370b417efc39f328a0d068004c #derived from the nodekeyhex of the bootnode
+      - bootnodeId=76a8171707eca17647a47ca99ffd348927dfa60102792ea349a25d5192e61855be83b786e376276a306afcceea4ffd1c9c77e4370b417efc39f328a0d068004c
 
       - bootnodeIp=172.25.0.101
 
@@ -124,9 +124,9 @@ services:
 
      environment:
 
-       - address=4208e6787feed868dd8e6e36b03d6f44916aa5c6 #derived from the private key which is passed in the args
+       - address=4208e6787feed868dd8e6e36b03d6f44916aa5c6
 
-       - bootnodeId=76a8171707eca17647a47ca99ffd348927dfa60102792ea349a25d5192e61855be83b786e376276a306afcceea4ffd1c9c77e4370b417efc39f328a0d068004c #derived from the nodekeyhex of the bootnode
+       - bootnodeId=76a8171707eca17647a47ca99ffd348927dfa60102792ea349a25d5192e61855be83b786e376276a306afcceea4ffd1c9c77e4370b417efc39f328a0d068004c
 
        - bootnodeIp=172.25.0.101
 
@@ -168,9 +168,9 @@ services:
 
      environment:
 
-       - address=624facb43e49d6572e76b13c6e20efae8cc4c284 #derived from the private key which is passed in the args
+       - address=624facb43e49d6572e76b13c6e20efae8cc4c284
 
-       - bootnodeId=76a8171707eca17647a47ca99ffd348927dfa60102792ea349a25d5192e61855be83b786e376276a306afcceea4ffd1c9c77e4370b417efc39f328a0d068004c #derived from the nodekeyhex of the bootnode
+       - bootnodeId=76a8171707eca17647a47ca99ffd348927dfa60102792ea349a25d5192e61855be83b786e376276a306afcceea4ffd1c9c77e4370b417efc39f328a0d068004c
 
        - bootnodeIp=172.25.0.101
 
@@ -212,9 +212,9 @@ services:
 
      environment:
 
-       - address=c5d6bb61cfb4474f7891546d163e6fa76cba0739 #derived from the private key which is passed in the args
+       - address=c5d6bb61cfb4474f7891546d163e6fa76cba0739
 
-       - bootnodeId=76a8171707eca17647a47ca99ffd348927dfa60102792ea349a25d5192e61855be83b786e376276a306afcceea4ffd1c9c77e4370b417efc39f328a0d068004c #derived from the nodekeyhex of the bootnode
+       - bootnodeId=76a8171707eca17647a47ca99ffd348927dfa60102792ea349a25d5192e61855be83b786e376276a306afcceea4ffd1c9c77e4370b417efc39f328a0d068004c
 
        - bootnodeIp=172.25.0.101
 
