@@ -1,0 +1,37 @@
+FROM ubuntu:18.04
+
+
+
+MAINTAINER Tamas Kovacs
+
+
+
+RUN apt-get update \
+
+     && apt-get install -y wget \
+
+     && rm -rf /var/lib/apt/lists/* 
+
+	 
+
+WORKDIR "/opt"
+
+ARG GETHBINARY="geth-linux-amd64-1.9.7-a718daa6.tar.gz"
+
+RUN wget "https://gethstore.blob.core.windows.net/builds/$GETHBINARY"
+
+RUN tar -xzvf $GETHBINARY --strip 1
+
+RUN rm $GETHBINARY
+
+
+
+ENV nodekeyhex="08f0e1dee5c1b4645f3331a566009e41a4514b6cd28656d63d0449ecf812812b"
+
+CMD exec ./bootnode -nodekeyhex $nodekeyhex
+
+
+
+EXPOSE 30301/udp
+
+EXPOSE 30303/udp
